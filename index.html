@@ -1,0 +1,79 @@
+<!DOCTYPE html >
+
+<html>
+<head>
+
+        <title> Dating Site</title>
+ 
+     <link rel="stylesheet" type="text/css" href="index.css">   
+        
+    <script src="C:\Users\admin\Desktop\simple.js" type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <h2> Please Enter Your Details For Our Dating Website!!</h2>
+        <form action="action.php" method="post" target="_blank">
+            <fieldset>
+                <legend > Your Face </legend>
+                <div class="shift">
+                    <p>Your image: <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()"></p>
+                    <p>Image Preview: <canvas id="preview" width="200" height="100"></canvas></p>
+                </div>
+
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend> Your General Details </legend>
+                <div class="shift">
+                
+                    <p> Name: <input type="text" name="Name" value=""></p>
+                    <p> Gender: <input type="radio" name="gender" value="Male"> Male 
+                                <input type="radio" name="gender" value="Female"> Female</p>
+                    <p> Age: <input type="number" name="age" value="age"></p>
+                    <p> Favorite Color: <input type="color" name="color" value="color"></p>
+                        
+                    <label><h3> Which Country </h3></label> 
+                    <select>
+                        <option value="Nigeria"> Nigeria</option>
+                        <option value="France"> France</option>
+                    </select>
+                </div> 
+            </fieldset>
+            <fieldset>
+                <legend> Your Indicators </legend>
+                    <div class="shift">
+                        <div class="all"> Height: </div>
+                        <div class="all2">
+                            <h5 Style=background-color:red>Short</h5> <input type="range" name="height" min="1" max="100" value="50" class="slider"> <h5 Style=background-color:purple> Tall</h5><br/>
+                        </div><br/>
+                        <div class="all">Salary: </div>
+                        <div class="all2"> 
+                            <h5 Style=background-color:red > Poor</h5> <input type="range" name="height" min="1" max="100" value="50" class="slider"> <h5 Style=background-color:purple> Rich</h5>
+                        </div>
+                    </div>    
+            </fieldset>
+            <fieldset>
+                    <legend> Your Contact Information </legend>
+                    <div class="shift">
+                    <p>Email: <input type="email" name="email" value=""></p>
+                        <p>Mobile:<input type="tel" name="mobile" value=""></p>
+                    <p> <label> Address </label> <textarea name="message" rows="4" cols="40"></textarea></p>
+                        <label> Method to contact you</label>
+                        <input type="checkbox" name="Email" value="mail"> Email
+                        <input type="checkbox" name="Whtasapp" value="Whatsapp"> Whatsapp
+                        <input type="checkbox" name="InappChat" value="InappChat"> InappChat
+                </div>
+           </fieldset>
+        
+                <p><input type="submit"> </p>
+
+        </form>
+    </div>
+</body>
+
+
+</html>
